@@ -12,7 +12,7 @@ describe PagesController do
     it "should have the right title" do
       get 'home'
       response.should have_selector("title",
-                        :content => "Ruby Home")
+                        :content => "Ruby on Rails | Ruby Home")
     end
   end
 
@@ -26,7 +26,7 @@ describe PagesController do
       get 'contact'
       response.should have_selector("title",
                         :content =>
-                          "ContactUs")
+                          "Ruby on Rails | ContactUs")
     end
   end
 
@@ -40,7 +40,7 @@ describe PagesController do
       get 'about'
       response.should have_selector("title",
                         :content =>
-                          "AboutUs")
+                          "Ruby on Rails | AboutUs")
     end
   end
 end
